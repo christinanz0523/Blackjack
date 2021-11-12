@@ -2,6 +2,7 @@
 #define PLAYWINDOW_H
 #include <QDebug>
 #include <QMainWindow>
+#include <QMouseEvent>
 
 namespace Ui {
 class PlayWindow;
@@ -15,7 +16,8 @@ public:
     explicit PlayWindow(QWidget *parent = 0);
     ~PlayWindow();
     QList<QPixmap> cardHolder;
-    int deckValues[52];
+    int deckValues[104];
+    bool eventFilter(QObject *watched, QEvent *event);
 
 
 public slots:
@@ -31,6 +33,12 @@ private slots:
 
     void on_actionQuit_triggered();
 
+
+    void on_okaybutton_clicked();
+
+    void on_four_random_card_clicked();
+
+    void on_twistButton_2_clicked();
 
 private:
     Ui::PlayWindow *ui;
