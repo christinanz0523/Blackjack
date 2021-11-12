@@ -11,31 +11,15 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Blackjack C++</string>
+   <string>6nimmt C++</string>
   </property>
   <property name="autoFillBackground">
    <bool>true</bool>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QLabel" name="pictureLabel">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>-10</y>
-      <width>451</width>
-      <height>371</height>
-     </rect>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>471</width>
-      <height>411</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
@@ -50,8 +34,8 @@
    <widget class="QPushButton" name="closeButton">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>320</y>
+      <x>340</x>
+      <y>300</y>
       <width>141</width>
       <height>23</height>
      </rect>
@@ -63,20 +47,38 @@
    <widget class="QPushButton" name="playButton">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>320</y>
-      <width>142</width>
-      <height>23</height>
+      <x>130</x>
+      <y>260</y>
+      <width>211</width>
+      <height>71</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/images/images/startbutton.png);</string>
+    </property>
     <property name="text">
-     <string>Play Game</string>
+     <string/>
     </property>
    </widget>
-   <zorder>layoutWidget</zorder>
-   <zorder>pictureLabel</zorder>
-   <zorder>closeButton</zorder>
-   <zorder>playButton</zorder>
+   <widget class="QLabel" name="pictureLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>461</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>471</width>
+      <height>411</height>
+     </size>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
