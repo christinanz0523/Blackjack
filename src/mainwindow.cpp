@@ -7,7 +7,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    QPixmap pix(":/images/images/bg.jpg");
+    QPixmap pix(":/images/images/bg.png");
     ui->pictureLabel->setPixmap(pix);
     ui->pictureLabel->setFixedSize(480,360);
     ui->pictureLabel->lower();
@@ -32,7 +32,3 @@ void MainWindow::on_playButton_clicked()
     this->hide();
 }
 
-void MainWindow::on_actionQuit_triggered()
-{
-    QApplication::quit();
-}
